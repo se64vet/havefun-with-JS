@@ -1,0 +1,155 @@
+{
+   "classic-drinks":[
+        {
+            "name" :    "Old Fashioned",
+            "price":    "14.99",
+            "imgUrl" :  "./img/classics/1.jpg",
+            "desc" :    "There may be no better test of a bartender's mettle than ordering an Old Fashioned.",
+            "popular":  true
+        },
+        {
+            "name" :    "Negroni",
+            "price":    "13.49",
+            "imgUrl" :  "./img/classics/2.jpg",
+            "desc" :    "A favorite of bartenders all over the world, the Negroni is a simple three-ingredient cocktail.",
+            "popular":  false
+        },
+        {
+            "name" :    "Moscow Mule",
+            "price":    "15.99",
+            "imgUrl" :  "./img/classics/3.jpg",
+            "desc" :    "Popular for good reason, the Moscow Mule is one of the most refreshing things to sip on a hot summer day. Its suggested vessel, a copper mug, also just looks sharp.",
+            "popular":  false
+        },
+        {
+            "name" :    "Martini",
+            "price":    "12.97",
+            "imgUrl" :  "./img/classics/4.jpg",
+            "desc" :    "JafalseBond was wrong—whether you drink it with gin or vodka, stirred is the way to go when ordering a martini.",
+            "popular":  true
+        },
+        {
+            "name" :    "Whiskey Sour",
+            "price":    "15.00",
+            "imgUrl" :  "./img/classics/5.jpg",
+            "desc" :    "Perhaps the most refreshing whiskey cocktail, this is an old reliable favorite.",
+            "popular":  false
+        },
+        {
+            "name" :    "Manhattan",
+            "price":    "17.00",
+            "imgUrl" :  "./img/classics/6.jpg",
+            "desc" :    "Created sometime in the mid-1800s, the Manhattan is one of the booziest classic drink recipes.",
+            "popular":  true
+        },
+        {
+            "name" :    "Sazerac",
+            "price":    "11.52",
+            "imgUrl" :  "./img/classics/7.jpg",
+            "desc" :    "If you like a drink with some bite, give this classic New Orleans concoction a try.",
+            "popular":  false
+        },
+        {
+            "name" :    "Paloma",
+            "price":    "13.49",
+            "imgUrl" :  "./img/classics/8.jpg",
+            "desc" :    "In Mexico the paloma is just as popular as the classic margarita, and with a thirst-quenching combination of tequila, lime, and grapefruit soda it's bound to become a summer favorite of yours too.",
+            "popular":  false
+        }
+    ],
+
+    "alcohol-free":[
+        {
+            "name" :    "A 1St Clements",
+            "price":    "11.52",
+            "imgUrl":   "./img/none alcohol/1.webp",
+            "desc":      "Made with fresh orange juice and bitter lemon, it's lovely and refreshing and works well with or without gin.",
+            "tag":      "none Alcohol",
+            "popular":  false
+        },
+        {
+            "name" :    "Cranberry ginger beer",
+            "price":    "12.52",
+            "imgUrl":   "./img/none alcohol/2.webp",
+            "desc":      "Fresh cranberry juice, some ginger beer (the nonalcoholic kind), lime, mint, sugar, and you can top it with a little soda water if you like! It's a really refreshing drink and the ginger beer gives it a fizzy kick a bit different from a normal fruit juice.",
+            "tag":      "none Alcohol",
+            "popular":  false
+        },
+        {
+            "name" :    "Juice and honey",
+            "price":    "15.52",
+            "imgUrl":   "./img/none alcohol/3.webp",
+            "desc":      "This works for teetotallers or for anyone suffering from a hangover. There's an often-cited juice hangover cure consisting of apple, carrot, and ginger juice, so if you can get your hands on that, you're golden. Otherwise, juice with a little honey is a great (healthy) nonalcoholic drink.",
+            "tag":      "none Alcohol",
+            "popular":  true
+        },
+        {
+            "name" :    "Gibson in disguise",
+            "price":    "20.52",
+            "imgUrl":   "./img/none alcohol/4.webp",
+            "desc":      "Some believe that the original Gibson martini was created for a teetotal American diplomat, who drank chilled water garnished with a cocktail onion, as opposed to an olive or twist, to disguise it from the gin versions.",
+            "tag":      "none Alcohol",
+            "popular":  false
+        },
+        {
+            "name" :    "A fruity Fizz",
+            "price":    "14.99",
+            "imgUrl":   "./img/none alcohol/5.webp",
+            "desc":      "This one is an orange and cranberry juice mix. The Fizz can be garnished with an orange slice and maraschino cherry, or for a more tropical feel, toss in some halved strawberries, pineapple, or kiwi chunks. This will fizz on your tongue, but won't leave you with a poorly head.",
+            "tag":      "none Alcohol",
+            "popular":  false
+        }
+    ],
+
+    "cocktails":[
+        {
+            "name":     "Dark and Stormy",
+            "price":    "20.50",
+            "imgUrl":   "./img/cocktails/1.png",
+            "desc":     "Sweet and sharp, the Dark and Stormy climbed out of the Bermuda Triangle to become one the most popular Caribbean rum cocktails you can make.",
+            "tag":      "cocktails",
+            "popular":  false
+        },
+        {
+            "name":     "French 75",
+            "price":    "17.99",
+            "imgUrl":   "./img/cocktails/2.png",
+            "desc":     "The French 75, with gin and champagne, packs a wallop, made all the more dangerous by how delightful it is to drink.",
+            "tag":      "cocktails",
+            "popular":  true
+        },
+        {
+            "name":     "Boulevardier",
+            "price":    "18.50",
+            "imgUrl":   "./img/cocktails/3.png",
+            "desc":     "The Negroni's wintery counterpart is the Boulevardier, a whiskey cocktail invented for expat Americans bumming around Paris in the early 20th century.",
+            "tag":      "cocktails",
+            "popular":  false
+        },
+        {
+            "name":     "Bloody Mary",
+            "price":    "25.00",
+            "imgUrl":   "./img/cocktails/4.png",
+            "desc":     "It's labor intensive, sure, but it's highly customizable. You can decide just how you want the horseradish to play off the citrus that plays off the hot sauce heat.",
+            "tag":      "cocktails",
+            "popular":  true
+        },
+        {
+            "name":     "Mojito",
+            "price":    "16.98",
+            "imgUrl":   "./img/cocktails/5.png",
+            "desc":     "Really, it's difficult to imagine a combination more refreshing than rum, lime, mint, and bubbles. We have Cuba to thank, and thank heartily, for the Mojito.",
+            "tag":      "cocktails",
+            "popular":  true
+        },
+        {
+            "name":     "Gimlet",
+            "price":    "14.99",
+            "imgUrl":   "./img/cocktails/6.png",
+            "desc":     "Rose's lime cordial is perfectly balanced by herbaceous dry gin in this tart, impossible-to-screw-up British cocktail.",
+            "tag":      "cocktails",
+            "popular":  false
+        }
+    ]
+    
+}

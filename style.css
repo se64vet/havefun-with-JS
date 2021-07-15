@@ -1,0 +1,349 @@
+/*==============================
+    Fonts Hind-madurai & Signika 
+  ===============================*/
+  @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;600&family=Signika:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* =============
+    Variables
+   ============= */
+:root{
+    /* Dark color scheme */
+    --primary-color:#222831;
+    --secondary-color:#30475e;
+    --light-color-1:rgb(250, 75, 162);
+    --light-color-2:#ececec;
+}
+
+/* ================
+    global styles
+   ================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {list-style: none;}
+a  {text-decoration: none;}
+img{display: block;}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--light-color-2);
+}
+
+
+/* ===================
+    scrollbar styling
+   =================== */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border: none;
+    border-radius:2em;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: hotpink; 
+    border: none;
+    border-radius:2em;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+/* ============================
+    fun classes to play around
+   ============================ */
+   .neon-text {
+    color: #fff !important;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #f09,
+        0 0 82px #f09,
+        0 0 92px #f09,
+        0 0 102px #f09,
+        0 0 151px #f09;
+  }
+  .neon-box{
+    border-radius: 1rem;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe,
+    0 0 2.8rem #bc13fe,
+    inset 0 0 1.3rem #bc13fe;
+    
+  }
+
+/* ================
+    wrap section
+   ================ */
+
+.wrap-section{
+    width: 80%;
+    height: 90%;
+    background: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: -8px 10px 15px 0px rgba(69,69,69,1);
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    text-align: center;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    color: var(--light-color-1);
+    width: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Hamburger nav button only appear in small devices */
+.hamburger {
+    display: none;
+    width: 2em;
+    height: 5px;
+    background: var(--light-color-2);
+    border-radius: 1em;
+}
+    .hamburger::before, .hamburger::after{
+        display: block;
+        width: 2em;
+        height: 5px;
+        content: "";
+        background: var(--light-color-2);
+        border-radius: 1em;
+    }
+    .hamburger::before{transform: translateY(10px);}
+    .hamburger::after{transform: translateY(-15px);}
+.text-title{
+    font-size: 5em;
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    width: max-content;
+    padding: 0 1em;
+    line-height: 1.2;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    padding-top: 3em;
+}
+    .choice{
+        color: var(--light-color-2);
+        background: none;
+        border: none;
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: .1s ease;
+    }
+    .choice:hover{
+        color: hotpink;
+    }
+
+/* ================
+        menu
+   ================ */
+.menu-wrap{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.menu-card{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 3em 4em;
+    justify-content: start;
+    align-content: start;
+    padding: 0 5em;
+    width: 100%;
+    height: auto;
+    
+}
+.menu-item{
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 20% 70%;
+    column-gap: 1em;
+    width: auto;
+    
+}
+    .menu-item .item-img{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 1em;
+        box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75);
+
+        
+    }
+        .menu-item .item-img img{
+            position: relative;
+            width: inherit;
+            height: inherit;
+            object-position: 50% 50%;
+            object-fit: cover;
+            transform: scale(1.1);
+        }
+    
+    .menu-item .item-name{
+      
+        font-family: 'Hind Madurai', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        
+    }
+    .menu-item .item-price{
+        
+        text-align: end;
+    }
+    .menu-item .item-description{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        padding-top: 1em;
+        
+        border-top: 2px solid hotpink;
+        font-family: 'Signika', sans-serif;
+
+        height: min-content;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+        
+    }
+
+/* ================
+        paging
+   ================ */
+.paging{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 5em;
+}
+    .page{
+        background-color: var(--light-color-2);
+        font-family: 'Hind Madurai', sans-serif;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    .active{
+        background: var(--light-color-1);
+    }
+
+/* ================
+    responsive
+   ================ */
+   /* medium devices */
+   @media only screen and (max-width: 1142px){
+    .menu-card{
+        grid-template-columns: 1fr;
+    }
+   }
+
+   /* mobile devices */
+   @media only screen and (max-width: 641px){
+        /* ================
+            head
+           ================ */
+    .head{
+        position: relative;
+        padding: 0;
+        padding-top: 1em;
+    }
+    .hamburger{
+        display: block;
+        margin: 2em auto;
+        position: relative;
+        z-index: 1;
+
+    }
+    .text-title{
+        width: 100%;
+        margin: 0;
+    }
+    .display-flex{
+        display: flex !important;
+        
+    }
+    .filter{
+        flex-direction: column;
+        display: none;
+        background: #30475e;
+        padding: 1em;
+        border-radius: 1em;
+        font-size: .8em;
+    }
+
+        /* ================
+            menu-card
+           ================ */
+    .menu-card{
+        padding: 0 1em;
+        grid-template-columns: 1fr;
+        
+    }
+    .menu-item{
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 30% 50%;
+        padding-top: 5px;
+        font-size: .8em;
+    }
+    .menu-item .item-name{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: min-content;
+    }
+    .menu-item .item-price{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: start;
+    }
+    .menu-item .item-description{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .menu-item .item-img{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+        /* ================
+            paging
+           ================ */
+    .paging{
+        display: none;
+    }
+}
+
+         
